@@ -30,6 +30,7 @@ const Footer = () => {
         }}>
         {contact.map((c: any) => (
           <Box
+            key={Math.random()}
             onClick={() => window.open(c.url, '_blank')}
             sx={{cursor: 'pointer', mx: 1}}>
             {c.icon}

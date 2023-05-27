@@ -66,6 +66,7 @@ const Skills = () => {
           sx={{display: 'flex', justifyContent: 'center'}}>
           {frontend?.map((skill: any) => (
             <Grid
+              key={Math.random()}
               item
               xs={4}
               md={2}
@@ -90,6 +91,7 @@ const Skills = () => {
           sx={{display: 'flex', justifyContent: 'center', mt: 1}}>
           {backend?.map((skill: any) => (
             <Grid
+              key={Math.random()}
               item
               xs={6}
               md={2}
@@ -114,6 +116,7 @@ const Skills = () => {
           sx={{display: 'flex', justifyContent: 'center', mt: 1}}>
           {other?.map((skill: any) => (
             <Grid
+              key={Math.random()}
               item
               xs={4}
               md={2}

@@ -24,7 +24,12 @@ const Projects = () => {
         </Divider>
         <Grid container spacing={2}>
           {proj?.map((project: any) => (
-            <Grid item xs={12} md={6} sx={{backgroundColor: 'white'}}>
+            <Grid
+              key={Math.random()}
+              item
+              xs={12}
+              md={6}
+              sx={{backgroundColor: 'white'}}>
               <Card
                 elevation={0}
                 variant="outlined"
